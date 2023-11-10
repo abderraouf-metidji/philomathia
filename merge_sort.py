@@ -7,12 +7,12 @@ Si le tableau est de taille impaire, le sous-tableau de droite est légèrement 
 L'algorithme répète ensuite la division des sous-tableaux jusqu'à ce que chaque sous-tableau ne contienne qu'un seul élément.
 """
 
-def merge_sort(array):
-    if len(array) > 1:
+def merge_sort(input_list):
+    if len(input_list) > 1:
         
-        r = len(array)//2
-        L = array[:r]
-        M = array[r:]
+        r = len(input_list)//2
+        L = input_list[:r]
+        M = input_list[r:]
         
         merge_sort(L)
         merge_sort(M)
@@ -21,32 +21,32 @@ def merge_sort(array):
         
         while i < len(L) and j < len(M):
             if L[i] < M[j]:
-                array[k] = L[i]
+                input_list[k] = L[i]
                 i += 1
             else :
-                array[k] = M[j]
+                input_list[k] = M[j]
                 j += 1
             k += 1
             
         while i < len(L):
-            array[k] = L[i]
+            input_list[k] = L[i]
             i += 1
             k += 1
             
         while j < len(M):
-            array[k] = M[j]
+            input_list[k] = M[j]
             j += 1
             k += 1
             
-def printlist(array):
-    for i in range(len(array)):
-        print(array[i], end=" ")
+def printlist(input_list):
+    for i in range(len(input_list)):
+        print(input_list[i], end=" ")
     print()
     
 if __name__ == '__main__':
-    array = [64, 34, 25, 12, 22, 11, 90]
+    input_list = [64, 34, 25, 12, 22, 11, 90]
 
-    merge_sort(array)
+    merge_sort(input_list)
     
-    print("Sorted array is: ") 
-    printlist(array)
+    print("Sorted input_list is: ") 
+    printlist(input_list)
