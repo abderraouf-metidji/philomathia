@@ -1,10 +1,7 @@
 """
-Tri par insertion (insertion sort)
+Insertion sort
 
-Le tri par insertion est un algorithme de tri simple qui fonctionne en insérant progressivement les éléments d'un tableau dans leur position correcte.
-L'algorithme commence par considérer le premier élément du tableau comme déjà trié. 
-Pour chaque élément suivant, l'algorithme parcourt le tableau trié, en comparant l'élément à chaque élément précédemment trié. 
-Si l'élément est plus petit que l'un des éléments précédemment triés, l'algorithme l'insère à la position appropriée.
+Insertion sort is a simple sorting algorithm that works by gradually inserting elements into their correct position in an array. The algorithm starts by considering the first element of the array as already sorted. For each subsequent element, the algorithm iterates through the sorted array, comparing the element to each previously sorted element. If the element is smaller than one of the previously sorted elements, the algorithm inserts it at the appropriate position.
 """
 def insertion_sort(input_list):
     for step in range(1, len(input_list)):

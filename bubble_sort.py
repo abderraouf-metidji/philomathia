@@ -1,10 +1,7 @@
 """
-Tri à bulles (bubble sort)
+Bubble sort
 
-Le tri à bulles est un algorithme de tri simple qui fonctionne en comparant les éléments adjacents d'un tableau et en les échangeant si nécessaire. 
-L'algorithme commence par comparer le premier et le deuxième élément du tableau. 
-Si le premier élément est plus grand que le deuxième élément, les deux éléments sont échangés. 
-L'algorithme répète ensuite la comparaison pour les deux éléments suivants, et ainsi de suite, jusqu'à ce que le dernier élément du tableau soit atteint.
+Bubble sort is a simple sorting algorithm that works by repeatedly comparing adjacent elements of an array and swapping them if they are in the wrong order. The algorithm starts by comparing the first and second elements of the array. If the first element is greater than the second element, the two elements are swapped. The algorithm then repeats the comparison for the next two elements, and so on, until the last element of the array is reached.
 """
 
 def bubble_sort(input_list):

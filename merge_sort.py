@@ -1,10 +1,7 @@
 """
-Tri fusion (merge sort)
+Merge sort
 
-Le tri fusion est un algorithme de tri efficace qui fonctionne en divisant un tableau en deux sous-tableaux, puis en fusionnant les deux sous-tableaux triés en un seul tableau trié. 
-L'algorithme commence par diviser le tableau en deux sous-tableaux de taille égale. 
-Si le tableau est de taille impaire, le sous-tableau de droite est légèrement plus grand que le sous-tableau de gauche. 
-L'algorithme répète ensuite la division des sous-tableaux jusqu'à ce que chaque sous-tableau ne contienne qu'un seul élément.
+Merge sort is an efficient sorting algorithm that works by dividing an array into two subarrays, then merging the two sorted subarrays into a single sorted array. The algorithm starts by dividing the array into two subarrays of equal size. If the array is odd in size, the right subarray is slightly larger than the left subarray. The algorithm then repeats the division of the subarrays until each subarray contains only a single element.
 """
 
 def merge_sort(input_list):
