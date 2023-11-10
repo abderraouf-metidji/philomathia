@@ -6,13 +6,13 @@ L'algorithme commence par considérer le premier élément du tableau comme déj
 Pour chaque élément suivant, l'algorithme parcourt le tableau trié, en comparant l'élément à chaque élément précédemment trié. 
 Si l'élément est plus petit que l'un des éléments précédemment triés, l'algorithme l'insère à la position appropriée.
 """
-def insertion_sort(array):
-    for step in range(1, len(array)):
-        key = array[step]
+def insertion_sort(input_list):
+    for step in range(1, len(input_list)):
+        key = input_list[step]
         j = step - 1
         
-        while j >= 0 and key < array[j]:
-            array[j + 1] = array[j]
+        while j >= 0 and key < input_list[j]:
+            input_list[j + 1] = input_list[j]
             j = j - 1
             
-        array[j + 1] = key
+        input_list[j + 1] = key
