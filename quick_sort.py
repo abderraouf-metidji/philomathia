@@ -1,3 +1,10 @@
+"""
+Tri rapide (quick sort)
+
+Le tri rapide est un algorithme de tri efficace qui fonctionne en choisissant un élément du tableau, appelé pivot, puis en divisant le tableau en deux sous-tableaux, l'un contenant tous les éléments plus petits que le pivot, et l'autre contenant tous les éléments plus grands que le pivot. 
+L'algorithme répète ensuite la procédure pour chacun des deux sous-tableaux, jusqu'à ce que tous les éléments du tableau soient triés.
+"""
+
 def partition(array, low, high):
     
     pivot = array[high]
